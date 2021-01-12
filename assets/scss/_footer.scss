@@ -16,6 +16,7 @@
             padding: calc(0.005208 * 100vh) 0;
         }
         &__text {
+            font-size: $font-size-18;
             width: calc(0.260416 * 100vw);
         }
     }
@@ -27,6 +28,7 @@
             .footer__item {
                 padding: calc(0.005208 * 100vh) 0;
                 .footer__link {
+                    font-size: $font-size-20;
                     color: $black;
                 }
             }

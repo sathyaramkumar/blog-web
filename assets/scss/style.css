@@ -190,6 +190,7 @@ h3 {
 
 .blogs__container .blogs__list .blog__body__text {
   margin: calc(0.005208 * 100vh) 0;
+  font-size: calc(0.0104166 * 100vw);
 }
 
 .blogs__container .blogs__list .blog__body__link {
@@ -291,6 +292,7 @@ h3 {
 }
 
 .footer__content__text {
+  font-size: calc(0.009375 * 100vw);
   width: calc(0.260416 * 100vw);
 }
 
@@ -303,6 +305,7 @@ h3 {
 }
 
 .footer__nav .footer__list .footer__item .footer__link {
+  font-size: calc(0.0104166 * 100vw);
   color: black;
 }
 
