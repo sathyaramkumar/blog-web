@@ -42,11 +42,71 @@ button {
 h1 {
     font-size: $font-size-50;
 }
+// laptop view 
+@media (max-width: 1250px) {
+    h1 {
+        font-size: calc(0.04 * 100vw);
+    }
+}
+
+// tablet view 
+@media (max-width: 950px) {
+    h1 {
+        font-size: calc(0.052631 * 100vw);
+    }
+}
+
+// mobile view 
+@media (max-width: 640px) {
+    h1 {
+        font-size: calc(0.078125 * 100vw);
+    }
+}
 
 h2 {
     font-size: $font-size-30;
 }
+// laptop view 
+@media (max-width: 1250px) {
+    h2 {
+        font-size: calc(0.024 * 100vw);
+    }
+}
+
+// tablet view 
+@media (max-width: 950px) {
+    h2 {
+        font-size: calc(0.031578 * 100vw);
+    }
+}
+
+// mobile view 
+@media (max-width: 640px) {
+    h2 {
+        font-size: calc(0.046875 * 100vw);
+    }
+}
 
 h3 {
     font-size: $font-size-20;
+}
+// laptop view 
+@media (max-width: 1250px) {
+    h3 {
+        font-size: calc(0.016 * 100vw);
+    }
+}
+
+// tablet view 
+@media (max-width: 950px) {
+    h3 {
+        font-size: calc(0.021052 * 100vw);
+    }
+}
+
+// mobile view 
+@media (max-width: 640px) {
+    h3 {
+        font-size: calc(0.03125 * 100vw);
+    }
 }

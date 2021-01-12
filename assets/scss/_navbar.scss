@@ -54,3 +54,72 @@
         }
     }
 }
+
+// laptop view
+@media (max-width: 1250px) {
+    .header {
+        padding: calc(0.016 * 100vh) calc(0.056 * 100vw); //70
+        .navbar {
+            &__brand {
+                font-size: calc(0.02 * 100vw);
+            }
+            &__nav {
+                .navbar__list {
+                    .navbar__item {
+                        padding: 0 calc(0.016 * 100vw);
+                        margin-top: calc(0.008 * 100vh);
+                        .navbar__link {
+                            font-size: calc(0.016 * 100vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tablet view 
+@media (max-width: 950px) {
+    .header {
+        padding: calc(0.021052 * 100vh) calc(0.073684 * 100vw); //70
+        .navbar {
+            &__brand {
+                font-size: calc(0.026315 * 100vw);
+            }
+            &__nav {
+                .navbar__list {
+                    .navbar__item {
+                        padding: 0 calc(0.021052 * 100vw);
+                        margin-top: calc(0.010526 * 100vh);
+                        .navbar__link {
+                            font-size: calc(0.021052 * 100vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile view
+@media (max-width: 640px) {
+    .header {
+        padding: calc(0.03125 * 100vh) calc(0.078125 * 100vw); //50
+        .navbar {
+            &__brand {
+                font-size: calc(0.039062 * 100vw);
+            }
+            &__nav {
+                .navbar__list {
+                    .navbar__item {
+                        padding: 0 calc(0.03125 * 100vw);
+                        margin-top: calc(0.015625 * 100vh);
+                        .navbar__link {
+                            font-size: calc(0.03125 * 100vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

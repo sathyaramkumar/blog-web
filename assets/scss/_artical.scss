@@ -28,3 +28,98 @@
         }
     }
 }
+
+// laptop view
+@media (max-width: 1250px) {
+    .artical__section {
+        padding: calc(0.032 * 100vh) calc(0.08 * 100vw);
+        .article {
+            margin: calc(0.032 * 100vh) 0;
+            padding: calc(0.048 * 100%);
+            &__body {
+                margin-left: calc(0.024 * 100vw);
+                &__title {
+                    padding: calc(0.016 * 100vh) 0;
+                }
+                &__text {
+                    padding: calc(0.016 * 100vh) 0;
+                    font-size: calc(0.016 * 100vw);
+                }
+                &__link {
+                    font-size: calc(0.0144 * 100vw);
+                    color: $orange;
+                }
+            }
+            &__link {
+                &__img {
+                    width: calc(0.32 * 100vw);
+                    height: calc(0.24 * 100vh);
+                }
+            }
+        }
+    }
+}
+
+// tablet view
+@media (max-width: 950px) {
+    .artical__section {
+        padding: calc(0.042105 * 100vh) calc(0.105263 * 100vw);
+        .article {
+            margin: calc(0.042105 * 100vh) 0;
+            padding: calc(0.063157 * 100%);
+            &__body {
+                margin-left: calc(0.031578 * 100vw);
+                &__title {
+                    padding: calc(0.021052 * 100vh) 0;
+                }
+                &__text {
+                    padding: calc(0.021052 * 100vh) 0;
+                    font-size: calc(0.021052 * 100vw);
+                }
+                &__link {
+                    font-size: calc(0.018947 * 100vw);
+                }
+            }
+            &__link {
+                &__img {
+                    width: calc(0.421052 * 100vw);
+                    height: calc(0.315789 * 100vh);
+                }
+            }
+        }
+    }
+}
+
+// mobile view
+@media (max-width: 640px) {
+    .artical__section {
+        padding: calc(0.0625 * 100vh) calc(0.15625 * 100vw);
+        .article {
+            @include flex(column);
+            margin: calc(0.0625 * 100vh) 0;
+            padding: calc(0.09375 * 100%);
+            border: 2px solid #1a306354;
+            &__body {
+                margin-left: 0;
+                &__title {
+                    padding: calc(0.03125 * 100vh) 0;
+                }
+                &__text {
+                    padding: calc(0.03125 * 100vh) 0;
+                    font-size: calc(0.03125 * 100vw);
+                }
+                &__link {
+                    text-decoration: underline;
+                    font-size: calc(0.028125 * 100vw);
+                    color: $orange;
+                }
+            }
+            &__link {
+                &__img {
+                    width: calc(0.625 * 100vw);
+                    height: calc(0.46875 * 100vh);
+                }
+            }
+        }
+    }
+}

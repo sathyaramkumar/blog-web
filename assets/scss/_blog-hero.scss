@@ -8,3 +8,45 @@
         font-weight: $font-weight-400;
     }
 }
+
+// laptop view 
+@media (max-width: 1250px) {
+    .blog__hero {
+        padding: calc(0.1384 * 100vh) calc(0.08 * 100vw) calc(0.024 * 100vh) calc(0.08 * 100vw);
+        &__title {}
+        &__text {
+            width: calc(0.48 * 100vw);
+            padding: calc(0.016 * 100vh) 0;
+            font-size: calc(0.016 * 100vw);
+            font-weight: $font-weight-400;
+        }
+    }
+}
+
+// tablet view 
+@media (max-width: 950px) {
+    .blog__hero {
+        padding: calc(0.18210 * 100vh) calc(0.105263 * 100vw) calc(0.031578 * 100vh) calc(0.105263 * 100vw);
+        &__title {}
+        &__text {
+            width: calc(0.631578 * 100vw);
+            padding: calc(0.021052 * 100vh) 0;
+            font-size: calc(0.021052 * 100vw);
+            font-weight: $font-weight-400;
+        }
+    }
+}
+
+// mobile view 
+@media (max-width: 640px) {
+    .blog__hero {
+        padding: calc(0.270312 * 100vh) calc(0.15625 * 100vw) calc(0.046875 * 100vh) calc(0.15625 * 100vw);
+        &__title {}
+        &__text {
+            width: calc(0.703125 * 100vw);
+            padding: calc(0.03125 * 100vh) 0;
+            font-size: calc(0.03125 * 100vw);
+            font-weight: $font-weight-400;
+        }
+    }
+}

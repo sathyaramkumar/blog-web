@@ -1,6 +1,6 @@
 .hero {
     width: 100vw;
-    min-height: 700px; //calc(0.364583 * 100vh)
+    min-height: 500px; //calc(0.364583 * 100vh)
     text-align: center;
     color: $white;
     background-image: url(../img/hero-img.jpg);
@@ -18,5 +18,68 @@
         border: 10px solid $white;
         color: $black;
         background-color: $light-white;
+    }
+}
+
+// laptop view
+@media (max-width: 1250px) {
+    .hero {
+        width: 100vw;
+        height: calc(0.4 * 100vh); //calc(0.364583 * 100vh)
+        &__title {
+            padding: calc(0.112 * 100vh) 0 calc(0.024 * 100vh) 0;
+        }
+        &__text {
+            width: calc(0.64 * 100vw);
+            margin: auto;
+            padding: calc(0.024 * 100%);
+            font-size: calc(0.024 * 100vw);
+            font-weight: $font-weight-500;
+            border: 10px solid $white;
+            color: $black;
+            background-color: $light-white;
+        }
+    }
+}
+
+// tablet view
+@media (max-width: 950px) {
+    .hero {
+        width: 100vw;
+        height: calc(0.526315 * 100vh); //calc(0.364583 * 100vh)
+        &__title {
+            padding: calc(0.126315 * 100vh) 0 calc(0.031578 * 100vh) 0;
+        }
+        &__text {
+            width: calc(0.842105 * 100vw);
+            margin: auto;
+            padding: calc(0.031578 * 100%);
+            font-size: calc(0.031578 * 100vw);
+            font-weight: $font-weight-500;
+            border: 10px solid $white;
+            color: $black;
+            background-color: $light-white;
+        }
+    }
+}
+
+// mobile 
+@media (max-width: 640px) {
+    .hero {
+        width: 100vw;
+        height: calc(0.78125 * 100vh); //calc(0.364583 * 100vh)
+        &__title {
+            padding: calc(0.140625 * 100vh) 0 calc(0.015625 * 100vh) 0;
+        }
+        &__text {
+            width: calc(0.78125 * 100vw);
+            margin: auto;
+            padding: calc(0.046875 * 100%);
+            font-size: calc(0.046875 * 100vw);
+            font-weight: $font-weight-500;
+            border: 10px solid $white;
+            color: $black;
+            background-color: $light-white;
+        }
     }
 }
