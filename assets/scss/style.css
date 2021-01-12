@@ -194,6 +194,7 @@ h3 {
 }
 
 .blogs__container .blogs__list .blog__body__link {
+  font-size: calc(0.0104166 * 100vw);
   text-decoration: underline;
   color: #FC933B;
 }
