@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flex-jc-ai($direction, $jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+}
+
+h1 {
+    font-size: $font-size-50;
+}
+
+h2 {
+    font-size: $font-size-30;
+}
+
+h3 {
+    font-size: $font-size-20;
+}

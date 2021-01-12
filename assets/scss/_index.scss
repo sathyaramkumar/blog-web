@@ -1,0 +1,22 @@
+.hero {
+    width: 100vw;
+    min-height: 700px; //calc(0.364583 * 100vh)
+    text-align: center;
+    color: $white;
+    background-image: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &__title {
+        padding: calc(0.088541 * 100vh) 0 calc(0.015625 * 100vh) 0;
+    }
+    &__text {
+        width: calc(0.416666 * 100vw);
+        margin: auto;
+        padding: calc(0.015625 * 100%);
+        font-size: $font-size-30;
+        font-weight: $font-weight-500;
+        border: 10px solid $white;
+        color: $black;
+        background-color: $light-white;
+    }
+}

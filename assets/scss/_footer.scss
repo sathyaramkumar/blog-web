@@ -1,0 +1,49 @@
+.footer {
+    @include flex-jc-ai(row, space-between, flex-start);
+    width: 100vw;
+    padding: calc(0.026041 * 100vh) calc(0.052083 * 100vw);
+    background-color: $light-black;
+    &__content {
+        &__link {
+            display: block;
+            padding: calc(0.010416 * 100vh) 0;
+            font-size: $font-size-30;
+            font-weight: $font-weight-500;
+            color: $black;
+            cursor: pointer;
+        }
+        &__title {
+            padding: calc(0.005208 * 100vh) 0;
+        }
+        &__text {
+            width: calc(0.260416 * 100vw);
+        }
+    }
+    &__nav {
+        &__title {
+            border-bottom: 3px solid $black;
+        }
+        .footer__list {
+            .footer__item {
+                padding: calc(0.005208 * 100vh) 0;
+                .footer__link {
+                    color: $black;
+                }
+            }
+        }
+    }
+    &__social {
+        &_title {}
+        &__list {
+            .footer__social__item {
+                padding: calc(0.002604 * 100vh) 0;
+                .footer__social__link {
+                    margin-left: calc(0.007812 * 100vw);
+                    text-decoration: underline;
+                    font-size: $font-size-20;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

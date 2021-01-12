@@ -1,0 +1,30 @@
+.artical__section {
+    padding: calc(0.020833 * 100vh) calc(0.052033 * 100vw);
+    .article {
+        @include flex-jc-ai(row, center, center);
+        margin: calc(0.020833 * 100vh) 0;
+        padding: calc(0.03125 * 100%);
+        border: 2px solid #1a306354;
+        &__body {
+            margin-left: calc(0.015625 * 100vw);
+            &__title {
+                padding: calc(0.010416 * 100vh) 0;
+            }
+            &__text {
+                padding: calc(0.010416 * 100vh) 0;
+                font-size: $font-size-20;
+            }
+            &__link {
+                text-decoration: underline;
+                font-size: $font-size-18;
+                color: $orange;
+            }
+        }
+        &__link {
+            &__img {
+                width: calc(0.208333 * 100vw);
+                height: calc(0.15625 * 100vh);
+            }
+        }
+    }
+}

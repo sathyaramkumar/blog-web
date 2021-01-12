@@ -1,0 +1,56 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: calc(0.013020 * 100vh) calc(0.052083 * 100vw);
+    color: transparent;
+    .navbar {
+        @include flex-jc-ai(row, space-between, center);
+        &__brand {
+            font-size: $font-size-30;
+            font-weight: $font-weight-500;
+            color: $white;
+            cursor: pointer;
+        }
+        &__nav {
+            .navbar__list {
+                @include flex-jc-ai(row, center, center);
+                .navbar__item {
+                    padding: 0 calc(0.0104166 * 100vw);
+                    cursor: pointer;
+                    transition: all ease-in-out;
+                    transition-duration: 1s;
+                    &::after {
+                        display: block;
+                        width: 10px;
+                        margin: auto;
+                        content: "\f0dd";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: $light-white;
+                        opacity: 0;
+                    }
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+                            color: white;
+                            transition-delay: 0.6s;
+                        }
+                    }
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                    .navbar__link {
+                        font-size: $font-size-20;
+                        font-weight: $font-weight-500;
+                        color: $light-white;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
